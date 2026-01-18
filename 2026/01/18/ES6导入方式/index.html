@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>牢牢小子的博客</title>
+  <title>ES6导入方式 - 牢牢小子的博客</title>
   <meta name="description" content="分享一下生活中的美好">
   
   <!-- 引入主题样式 -->
@@ -171,35 +171,76 @@
       
       <!-- 主要内容区域 -->
       <div class="main-content">
-        
-<div class="archive">
-  <!-- 页面标题 -->
-  <h1 class="archive-title">
-    日常 分类
-  </h1>
+        <article class="post">
+  <!-- 文章标题 -->
+  <h1 class="post-title">ES6导入方式</h1>
   
-  <!-- 分类文章列表 -->
-  <div class="archive-list">
+  <!-- 文章元信息 -->
+  <div class="post-meta">
+    <span class="post-date">2026-01-18</span>
     
+    <!-- 更新日期 -->
+    
+    <span class="post-updated">
+      更新于: 2026-01-18
+    </span>
+    
+    
+    <!-- 分类 -->
+    
+    <span class="post-categories">
       
-      <article class="archive-item">
-        <!-- 文章链接 -->
-        <a href="/2026/01/14/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" class="archive-item-title">
-          日常记录
-        </a>
-        
-        <!-- 文章日期 -->
-        <span class="archive-item-date">
-          2026-01-14
-        </span>
-      </article>
+      <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
       
+    </span>
+    
+    
+    <!-- 标签 -->
+    
+    <span class="post-tags">
+      
+      <a href="/tags/JS-%E5%89%8D%E7%AB%AF/">#JS,前端</a>
+      
+    </span>
     
   </div>
   
-  <!-- 分页 -->
+  <!-- 文章内容 -->
+  <div class="post-content">
+    <h2 id="传统Vue2导入方式">传统Vue2导入方式</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import Vue from &#x27;vue&#x27;</span><br></pre></td></tr></table></figure>
+<p>Vue挂载了所有api，通过 Vue.函数 调用</p>
+<h2 id="命名导入">命名导入</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123;ref&#125; from &#x27;vue&#x27;</span><br></pre></td></tr></table></figure>
+<p>表示从vue包里导出某个具体的成员ref，{}中可以选择导入多个成员</p>
+<p>必须和导出时的名字保持一致</p>
+<p>适合库里有多个函数工具，而你只需要其中一个或几个</p>
+<h2 id="默认导入">默认导入</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import axios from &#x27;axios&#x27;</span><br></pre></td></tr></table></figure>
+<p>表示从axios包里导出的默认成员(default)</p>
+<p>默认成员：一个模块只能有一个默认导出</p>
+<p>名字可以随便起</p>
+<p>适合库只导出一个主要对象或函数</p>
+<h2 id="混合导入">混合导入</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import Vue, &#123;ref&#125; from &#x27;vue&#x27;</span><br></pre></td></tr></table></figure>
+<p>同时导入默认成员和部分命名成员</p>
+<h2 id="整体导入">整体导入</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import * as Vue from &#x27;vue&#x27;</span><br></pre></td></tr></table></figure>
+<p>把所有模块都导入</p>
+<h2 id="动态导入">动态导入</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const mod = await import(&#x27;./utils.js&#x27;)</span><br></pre></td></tr></table></figure>
+<p>在运行时按需加载模块，返回一个Promise</p>
+
+  </div>
   
-</div>
+  <!-- 文章底部 -->
+  <div class="post-footer">
+    <!-- 相关文章（可选） -->
+    
+  </div>
+</article>
+
+<!-- 评论区域 -->
 
       </div>
     </div>
