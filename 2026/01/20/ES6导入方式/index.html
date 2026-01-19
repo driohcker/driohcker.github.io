@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>今天有点好玩 - 牢牢小子的博客</title>
+  <title>ES6导入方式 - 牢牢小子的博客</title>
   <meta name="description" content="分享一下生活中的美好">
   
   <!-- 引入主题样式 -->
@@ -84,26 +84,26 @@
     <ul class="category-list">
       
       <li class="category-item">
-        <a href="/categories/%E6%9D%82%E8%B0%88/">
-          杂谈 <span class="count">2</span>
-        </a>
-      </li>
-      
-      <li class="category-item">
         <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
           学习笔记 <span class="count">2</span>
         </a>
       </li>
       
       <li class="category-item">
-        <a href="/categories/%E6%B5%8B%E8%AF%95/">
-          测试 <span class="count">1</span>
+        <a href="/categories/%E6%9D%82%E8%B0%88/">
+          杂谈 <span class="count">1</span>
         </a>
       </li>
       
       <li class="category-item">
         <a href="/categories/%E6%97%A5%E5%B8%B8/">
           日常 <span class="count">1</span>
+        </a>
+      </li>
+      
+      <li class="category-item">
+        <a href="/categories/%E6%B5%8B%E8%AF%95/">
+          测试 <span class="count">1</span>
         </a>
       </li>
       
@@ -115,12 +115,12 @@
     <h3 class="widget-title">标签</h3>
     <div class="tag-cloud">
       
-      <a href="/tags/%E5%A5%BD%E7%8E%A9-%E6%9C%89%E6%84%8F%E6%80%9D/" class="tag-item" style="font-size: 13px;">
-        好玩,有意思
+      <a href="/tags/JS/" class="tag-item" style="font-size: 13px;">
+        JS
       </a>
       
-      <a href="/tags/JS-%E5%89%8D%E7%AB%AF/" class="tag-item" style="font-size: 13px;">
-        JS,前端
+      <a href="/tags/%E5%89%8D%E7%AB%AF/" class="tag-item" style="font-size: 13px;">
+        前端
       </a>
       
       <a href="/tags/%E6%9D%82%E8%B0%88/" class="tag-item" style="font-size: 13px;">
@@ -140,13 +140,18 @@
     <ul class="recent-posts">
       
       <li class="recent-post-item">
-        <a href="/2026/01/18/%E4%BB%8A%E5%A4%A9%E6%9C%89%E7%82%B9%E5%A5%BD%E7%8E%A9/">今天有点好玩</a>
-        <span class="date">2026-01-18</span>
+        <a href="/2026/01/20/ES6%E5%AF%BC%E5%85%A5%E6%96%B9%E5%BC%8F/">ES6导入方式</a>
+        <span class="date">2026-01-20</span>
       </li>
       
       <li class="recent-post-item">
-        <a href="/2026/01/18/ES6%E5%AF%BC%E5%85%A5%E6%96%B9%E5%BC%8F/">ES6导入方式</a>
-        <span class="date">2026-01-18</span>
+        <a href="/2026/01/14/%E4%BB%8A%E6%97%A5%E6%9D%82%E8%B0%88/">今日杂谈</a>
+        <span class="date">2026-01-14</span>
+      </li>
+      
+      <li class="recent-post-item">
+        <a href="/2026/01/14/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录</a>
+        <span class="date">2026-01-14</span>
       </li>
       
       <li class="recent-post-item">
@@ -159,11 +164,6 @@
         <span class="date">2026-01-13</span>
       </li>
       
-      <li class="recent-post-item">
-        <a href="/2026/01/14/%E4%BB%8A%E6%97%A5%E6%9D%82%E8%B0%88/">今日杂谈</a>
-        <span class="date">2026-01-14</span>
-      </li>
-      
     </ul>
   </div>
 </aside>
@@ -173,16 +173,16 @@
       <div class="main-content">
         <article class="post">
   <!-- 文章标题 -->
-  <h1 class="post-title">今天有点好玩</h1>
+  <h1 class="post-title">ES6导入方式</h1>
   
   <!-- 文章元信息 -->
   <div class="post-meta">
-    <span class="post-date">2026-01-18</span>
+    <span class="post-date">2026-01-20</span>
     
     <!-- 更新日期 -->
     
     <span class="post-updated">
-      更新于: 2026-01-18
+      更新于: 2026-01-20
     </span>
     
     
@@ -190,7 +190,7 @@
     
     <span class="post-categories">
       
-      <a href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+      <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
       
     </span>
     
@@ -199,7 +199,9 @@
     
     <span class="post-tags">
       
-      <a href="/tags/%E5%A5%BD%E7%8E%A9-%E6%9C%89%E6%84%8F%E6%80%9D/">#好玩,有意思</a>
+      <a href="/tags/JS/">#JS</a>
+      
+      <a href="/tags/%E5%89%8D%E7%AB%AF/">#前端</a>
       
     </span>
     
@@ -207,8 +209,29 @@
   
   <!-- 文章内容 -->
   <div class="post-content">
-    <h2 id="23333">23333</h2>
-<h2 id="今天有点意思">今天有点意思</h2>
+    <h2 id="传统Vue2导入方式">传统Vue2导入方式</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>Vue挂载了所有api，通过 Vue.函数 调用</p>
+<h2 id="命名导入">命名导入</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;ref&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>表示从vue包里导出某个具体的成员ref，{}中可以选择导入多个成员</p>
+<p>必须和导出时的名字保持一致</p>
+<p>适合库里有多个函数工具，而你只需要其中一个或几个</p>
+<h2 id="默认导入">默认导入</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>表示从axios包里导出的默认成员(default)</p>
+<p>默认成员：一个模块只能有一个默认导出</p>
+<p>名字可以随便起</p>
+<p>适合库只导出一个主要对象或函数</p>
+<h2 id="混合导入">混合导入</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span>, &#123;ref&#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>同时导入默认成员和部分命名成员</p>
+<h2 id="整体导入">整体导入</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>把所有模块都导入</p>
+<h2 id="动态导入">动态导入</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mod = <span class="keyword">await</span> <span class="keyword">import</span>(<span class="string">&#x27;./utils.js&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>在运行时按需加载模块，返回一个Promise</p>
 
   </div>
   
